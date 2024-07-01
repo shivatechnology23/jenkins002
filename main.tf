@@ -72,9 +72,9 @@ resource "google_compute_backend_service" "default" {
   port_name             = "http"
   protocol              = "HTTP"
   timeout_sec           = 10
-  connection_draining {
-    draining_timeout_sec = 10
-  }
+  # connection_draining {
+  #   draining_timeout_sec = 10
+  # }
 }
 
 resource "google_compute_url_map" "default" {
