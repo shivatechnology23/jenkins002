@@ -23,3 +23,16 @@
 #   type        = number
 #   default     = 1
 # }
+
+variable "k8s_user" {
+  description = "Kubernetes username"
+  type        = string
+  default = "user1"
+}
+
+variable "k8s_password" {
+  description = "Kubernetes password"
+  type        = string
+  default = "password"
+}
+
