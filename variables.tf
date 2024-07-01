@@ -1,7 +1,9 @@
+
+
 variable "project_id" {
   description = "The GCP project ID"
   type        = string
-  default = "webx-424701"
+  default     = "webx-424701"
 }
 
 variable "region" {
@@ -10,14 +12,14 @@ variable "region" {
   default     = "us-central1"
 }
 
-variable "cluster_names" {
-  description = "List of GKE cluster names"
-  type        = list(string)
-  default     = ["cluster-1", "cluster-2"]
+variable "cluster_name" {
+  description = "The GKE cluster name"
+  type        = string
+  default     = "my-cluster"
 }
 
 variable "node_count" {
-  description = "Number of nodes in each cluster"
+  description = "Number of nodes in the cluster"
   type        = number
   default     = 1
 }
