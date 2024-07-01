@@ -13,7 +13,7 @@ variable "region" {
 variable "cluster_names" {
   description = "List of GKE cluster names"
   type        = list(string)
-  default     = ["cluster-1", "cluster-2", "cluster-3"]
+  default     = ["cluster-1", "cluster-2"]
 }
 
 variable "node_count" {
