@@ -12,16 +12,6 @@ pipeline {
             }
         }
 
-        // stage('Install Terraform') {
-        //     steps {
-        //         sh '''
-        //             # Install Terraform
-        //             curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
-        //             sudo apt-add-repository "deb https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-        //             sudo apt-get update && sudo apt-get install terraform
-        //         '''
-        //     }
-        // }
 
         stage('Terraform Init') {
             steps {
